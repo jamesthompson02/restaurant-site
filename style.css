@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css');
+:root {
+    --brand-blue: rgba(11,26,71,255);
+    --brand-yellow: rgba(220,212,85,255);
+    --brand-white: #ffffff;
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+@media screen and (min-width: 0px) and (max-width: 767.99px) {
+    body {
+        margin: 0px;
+    }
+    header {
+        width: 100vw;
+        height:100px;
+        background-color: var(--brand-blue);
+        display: flex;
+    }
+    .logo {
+        width: 80px;
+        height: 100px;
+    }
+}
+@media screen and (min-width: 768px) {
+    body {
+        margin: 0px;
+        width: 100vw;
+    }
+    header {
+        width: 100%;
+        height:100px;
+        background-color: var(--brand-blue);
+        display: flex;
+        position: relative;
+    }
+    .logo {
+        width: 80px;
+        height: 100px;
+    }
+    nav {
+        height: 60%;
+        text-decoration: none;
+    }
+    nav ul {
+        display: flex;
+        list-style: none;
+        height: 100%;
+    }
+    nav ul li {
+        text-decoration: none;
+        color: var(--brand-white);
+        margin: 0px 15px 0px 15px;
+        transform: translateY(35%);
+        height: 40px;
+    }
+    nav ul li a:hover {
+        color: var(--brand-yellow);
+        text-decoration: underline;
+    }
+    nav ul li a {
+        color: white;
+        font-family: 'Merienda', cursive;
+        text-decoration: none;
+        font-size: 25px;
+    }
+    .location {
+        height: 80%;
+        width: 75px;
+        margin: 10px 10px 0px 10px;
+    }
+    .fa-location-dot {
+        font-size: 30px;
+        color: var(--brand-white);
+        transform: translateY(75%);
+    }
+    .fa-location-dot:hover {
+        color: var(--brand-yellow);
+    }
+    .remainder-of-header {
+        height: 100px;
+        width: 30%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: absolute;
+        right: 50px;
+        
+    }
+    .searchbar {
+        display: flex;
+        align-items: center;
+        background-color: var(--brand-blue);
+        width: 175px;
+        height: 45%;
+        border-radius: 10px;
+        margin-right: 10px;
+        color: white;
+        border: 2px solid white;
+        padding: 0px 5px 0px 5px;
+    }
+    .searchbar input {
+        font-size: 25px;
+        margin: 0 5px 0px 5px;
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: var(--brand-blue);
+        color: white;
+    }
+    .searchbar input::placeholder {
+        color: white;
+        font-family: 'Merienda';
+    }
+    .book-button {
+        width: 100px;
+        height: 50px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .book-button button {
+        font-family: 'Merienda';
+        font-size: 25px;
+        border: 2px solid white;
+        background-color: #ffffff;
+        color:var(--brand-blue);
+        height: 50px;
+        width: 100px;
+        border-radius: 10px;
+
+    }
+    .book-button button:hover {
+        cursor: pointer;
+        background-color: var(--brand-blue);
+        color:#ffffff;
+    }
+    main {
+        width: 100%;
+        background-color: #e9e9e9;
+    }
+    .home-background-image {
+        background-image: url('images/home-background-image-1.jpg');
+        background-size: cover;
+        width: 100%;
+        height: calc(100vh - 100px);
+        position: relative; 
+    }
+    #home-background-image-1-text {
+        margin-top: 0px;
+        position: absolute;
+        top: 150px; 
+        left: 50px;
+    }
+    #home-background-image-1-text h1 {
+        color: white; 
+        font-family: 'Merienda';
+    }
+    #home-background-image-1-buttons {
+        position: absolute;
+        width: 300px;
+        height: 50px;
+        top: 270px;
+        left: 50px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    #home-background-image-1-buttons button {
+        font-family: 'Merienda';
+        font-size: 16px;
+        border: 2px solid white;
+        background-color: #ffffff;
+        color:var(--brand-blue);
+        border-radius: 10px;
+    }
+    #home-background-image-1-buttons button:hover {
+        cursor: pointer;
+        background-color: var(--brand-blue);
+        color:#ffffff;
+    }
+    .home-cards {
+        height: 600px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #wrapper-for-cards {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .card {
+        height: 460px;
+        width: 400px;
+        border-radius: 15px;
+    }
+    .card-image {
+        width:100%;
+        height: 400px;
+    }
+    .card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .card-text-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .card-header h2 {
+        font-family: 'Merienda';
+    }
+    .menu-button button {
+        font-family: 'Merienda';
+        font-size: 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+        background-color: var(--brand-blue);
+        color: white;
+    }
+    .menu-button button:hover {
+        cursor: pointer;
+        background-color: white;
+        color: var(--brand-blue);
+    }
+    .home-background-image-2 {
+        background-image: url('images/click\ and\ collect.jpg');
+        background-size: cover;
+        width: 100%;
+        height: calc(100vh - 100px);
+        position: relative; 
+    }
+    #home-background-image-2-text h2 {
+        font-family: 'Merienda';
+        color: white;
+        position:absolute;
+        top: 130px;
+        left: 50px;
+    }
+    #home-background-image-2-text h4 {
+        font-family: 'Merienda';
+        color: white;
+        position:absolute;
+        top: 180px;
+        left: 50px;
+    }
+    #home-background-image-2-button {
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    }
+    #home-background-image-2-button button {
+        font-family: 'Merienda';
+        color: white;
+        background-color: var(--brand-blue);
+        border-radius: 10px;
+        font-size: 20px;
+        border: 2px solid white;
+    }
+    #home-background-image-2-button button:hover {
+        color: var(--brand-blue);
+        background-color: white;
+        border: 2px solid var(--brand-blue);
+        cursor: pointer;
+    }
+    footer {
+        width: 100%;
+        height: 600px;
+        background-color: var(--brand-blue);
+    }
+    .top-of-footer {
+        width: 100%;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        border-bottom: 2px solid #e9e9e9;
+    }
+    .footer-box-logo {
+        width: 78px;
+        height: 98px;
+    }
+    .sign-up-row {
+        width: 100%;
+        height: 150px;
+        border-bottom: 2px solid #e9e9e9;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .sign-up-to-box {
+        width: 85px;
+        height: 120px;
+        color:#ffffff;
+        font-size: 20px;
+        font-family: 'Merienda';
+    }
+    .input-row {
+        width: 70%;
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .list-of-inputs {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .list-of-inputs input {
+        margin: 0px 10px 0px 10px;
+        width: 25%;
+        height: 30px;
+        background-color: var(--brand-white);
+        color: var(--brand-blue);
+        font-family: 'Merienda';
+        font-size: 20px;
+    }
+    .list-of-inputs input::placeholder {
+        color: var(--brand-blue);
+    }
+    .sign-up-terms-and-conditions {
+        color: white;
+        font-family: 'Merienda';
+        font-size: 12.9px;
+        width: 820px;
+        
+    }
+    .sign-up-terms-and-conditions a {
+        color: white;
+    }
+    .footer-sign-up-button {
+        transform: translateY(-20px);
+    }
+    .footer-sign-up-button button {
+        width: 125px;
+        height: 35px;
+        color: var(--brand-blue);
+        font-family: 'Merienda';
+        font-size: 20px;
+    }
+    .footer-sign-up-button button:hover {
+        cursor: pointer;
+        background-color: var(--brand-blue);
+        color: white;
+        border: 1px solid white;
+    }
+    .contact-details {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        border-bottom: 1px solid white;
+    }
+    .contact-us {
+        width: 50%;
+        height: 100%;
+        border-right: 1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-us a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Merienda';
+        font-size: 30px; 
+    }
+    .social-media-links {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-media-links a {
+        color: white;
+        font-size: 30px;
+        margin: 0px 15px 0px 15px;
+    }
+    .remainder-of-footer {
+        height: 225px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .boxes-for-general-links {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-general-links {
+        height: 180px;
+        width: 16%;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-general-links-header {
+        margin: 5px 0px 25px 0px;
+    }
+    .footer-general-links-header a {
+        text-decoration: none;
+        color: var(--brand-yellow);
+        font-family: 'Merienda';
+        font-size: 20px;
+    }
+    .footer-general-links-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-general-links-list a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Merienda';
+        font-size: 12px;
+    }
+}
